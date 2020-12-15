@@ -21,6 +21,15 @@ function colorSchedule(){
     });
 };
 
+//Rendering stored inputs after page refresh
+function renderStoredInputs(){
+    $(".event").each(function(){
+        var inputId = $(this).attr("id");
+        $(this).val(localStorage.getItem(inputId));
+    });
+};
+
+
 
     
 });
