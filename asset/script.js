@@ -39,7 +39,7 @@ $(document).ready(function(){
     
     setInterval(getDate,1000);
     color();
-    setInterval(colorSchedule,1000);
+    setInterval(color,1000);
     inputs();
 
 });
