@@ -72,35 +72,44 @@ body {
   
   }
   
-  .past {
-    background-color: #b8b6b6;
+  .hour:hover{
+    font-size: 10px;
+    transition: all .5s ease-in-out;
+
+  }
+
+  .yesterday {
+    opacity: 70%;
+    background-color: #777c48;
     color: white;
   }
   
-  .present {
-    background-color: white;
-    color: black;
-  }
-  
-  .future {
-    background-color: rgb(61, 128, 61);
+  .today {
+    background-color: rgb(24, 102, 133);
+    opacity: 70%;
     color: white;
   }
   
-  .saveBtn {
+  .tomorrow {
+    opacity: 70%;
+    background-color: rgb(138, 67, 145);
+    color: white;
+  }
+  
+  .save {
     box-shadow: 10px 10px 10px black;
     background: none;
     border-left: 1px solid black;
     color: white;
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
+  .save i:hover {
+    font-size: 40px;
     transition: all .5s ease-in-out;
   }
 
   @media screen and (max-width: 600px) {
-    .saveBtn {
+    .save {
       margin: inherit;
       border-left: none;
       border: none;
