@@ -29,7 +29,17 @@ function renderStoredInputs(){
     });
 };
 
+//Click event to save user input in local storage
+$(".saveBtn").click(function(){
+    var scheduleInputs = $(this).siblings(".event").val();
+    var inputsLocation = $(this).siblings(".event").attr("id");
+    localStorage.setItem(inputsLocation,scheduleInputs);
+});
 
+setInterval(getDate,1000);
+colorSchedule();
+setInterval(colorSchedule,1000);
+renderStoredInputs();
 
     
 });
