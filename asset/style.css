@@ -79,19 +79,19 @@ body {
   }
 
   .yesterday {
-    opacity: 70%;
-    background-color: #777c48;
+    opacity: 65%;
+    background-color: #444383;
     color: white;
   }
   
   .today {
     background-color: rgb(24, 102, 133);
-    opacity: 70%;
+    opacity: 65%;
     color: white;
   }
   
   .tomorrow {
-    opacity: 70%;
+    opacity: 65%;
     background-color: rgb(138, 67, 145);
     color: white;
   }
@@ -108,7 +108,7 @@ body {
     transition: all .5s ease-in-out;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 7860px) {
     .save {
       margin: inherit;
       border-left: none;

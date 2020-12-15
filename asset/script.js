@@ -4,11 +4,11 @@ $(document).ready(function(){
 
     
     function getDate(){
-        $("#currentDay").text(moment().format('MMMM Do, YYYY h:mm:ss'));
+        $("#currentDate").text(moment().format('MMMM Do, h:mm:ss'));
     };
 
   
-    function colorSchedule(){
+    function color(){
         $("input").each(function(){
             var rowHour = $(this).attr("id");
             var rowNumber = parseInt(rowHour);
@@ -38,7 +38,7 @@ $(document).ready(function(){
     });
     
     setInterval(getDate,1000);
-    colorSchedule();
+    color();
     setInterval(colorSchedule,1000);
     inputs();
 
