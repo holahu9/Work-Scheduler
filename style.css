@@ -1,0 +1,107 @@
+body {
+    background-image: url("asset/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+    line-height: 1;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+  }
+  
+  .container, .event,  .jumbotron  {
+    box-shadow: 0 15px 25px #705a5ae6;
+    background: rgba(51,59,63,0.47);
+  }
+
+  .event {
+    
+    color: white;
+  }
+
+ 
+
+  textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #5f9969;
+    /* border-left: 1px solid black; */
+    padding: 10px;
+  }
+  
+  .display-3 {
+    font-weight: bolder;
+  }
+
+  .jumbotron {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 80px;
+    border-bottom: 10px solid violet;
+    background-color: #272629;
+   
+
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .timeBlock{
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+    border-radius: 30px;
+  }
+  
+  .hour {
+    opacity: 60%;
+    background-color: black;
+    padding-top: 1%;
+    font-weight: bolder;
+    color: white;
+  
+  }
+  
+  .past {
+    background-color: #b8b6b6;
+    color: white;
+  }
+  
+  .present {
+    background-color: white;
+    color: black;
+  }
+  
+  .future {
+    background-color: rgb(61, 128, 61);
+    color: white;
+  }
+  
+  .saveBtn {
+    box-shadow: 10px 10px 10px black;
+    background: none;
+    border-left: 1px solid black;
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+  }
+
+  @media screen and (max-width: 600px) {
+    .saveBtn {
+      margin: inherit;
+      border-left: none;
+      border: none;
+    }
+  }
