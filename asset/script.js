@@ -1,3 +1,5 @@
+
+// function to get the current date //
 $(document).ready(function(){
 
     var hour = moment().hours();
@@ -7,7 +9,7 @@ $(document).ready(function(){
         $("#currentDate").text(moment().format('MMMM Do, h:mm:ss'));
     };
 
-  
+  // function to assign the colors to present, future, and past.
     function color(){
         $("input").each(function(){
             var rowHour = $(this).attr("id");
@@ -22,7 +24,7 @@ $(document).ready(function(){
         });
     };
 
-  
+  // save the input to local storage//
     function inputs(){
         $(".event").each(function(){
             var inputId = $(this).attr("id");
@@ -36,7 +38,8 @@ $(document).ready(function(){
         var inputsLocation = $(this).siblings(".event").attr("id");
         localStorage.setItem(inputsLocation,scheduleInputs);
     });
-    
+    // retrieve the above functions.
+
     setInterval(getDate,1000);
     color();
     setInterval(color,1000);
